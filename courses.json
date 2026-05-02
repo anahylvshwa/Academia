@@ -8,7 +8,7 @@
     "duracion": "4 semanas",
     "precio": 120,
     "disponible": true,
-    "imagen": "assets/js-basico.jpg",
+    "imagen": "java.jpg",
     "descripcion": "Curso introductorio para aprender los fundamentos de JavaScript y manipulación del DOM.",
     "temario": [
       "Variables y tipos",
@@ -26,7 +26,7 @@
     "duracion": "6 semanas",
     "precio": 180,
     "disponible": true,
-    "imagen": "assets/ux-ui.jpg",
+    "imagen": "diseño.jpg",
     "descripcion": "Curso enfocado en diseño de interfaces modernas y experiencia de usuario.",
     "temario": [
       "Wireframes",
@@ -44,7 +44,7 @@
     "duracion": "5 semanas",
     "precio": 95,
     "disponible": false,
-    "imagen": "assets/excel-data.jpg",
+    "imagen": "excel.jpg",
     "descripcion": "Aprende funciones, tablas dinámicas y gráficos para análisis de información.",
     "temario": [
       "Fórmulas",
@@ -62,7 +62,7 @@
     "duracion": "4 semanas",
     "precio": 140,
     "disponible": true,
-    "imagen": "assets/marketing.jpg",
+    "imagen": "marketing.jpg",
     "descripcion": "Curso introductorio sobre campañas digitales y redes sociales.",
     "temario": [
       "SEO",
@@ -80,7 +80,7 @@
     "duracion": "3 semanas",
     "precio": 80,
     "disponible": true,
-    "imagen": "assets/ofimatica.jpg",
+    "imagen": "word.jpg",
     "descripcion": "Curso práctico para elaboración de documentos y presentaciones profesionales.",
     "temario": [
       "Formato de documentos",
