@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "nombre": "JavaScript Básico",
+    "categoria": "Programación",
+    "nivel": "Básico",
+    "profesor": "Carlos Mendoza",
+    "duracion": "4 semanas",
+    "precio": 120,
+    "disponible": true,
+    "imagen": "assets/js-basico.jpg",
+    "descripcion": "Curso introductorio para aprender los fundamentos de JavaScript y manipulación del DOM.",
+    "temario": [
+      "Variables y tipos",
+      "Funciones",
+      "DOM",
+      "Eventos"
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "Diseño UX/UI con Figma",
+    "categoria": "Diseño",
+    "nivel": "Intermedio",
+    "profesor": "María López",
+    "duracion": "6 semanas",
+    "precio": 180,
+    "disponible": true,
+    "imagen": "assets/ux-ui.jpg",
+    "descripcion": "Curso enfocado en diseño de interfaces modernas y experiencia de usuario.",
+    "temario": [
+      "Wireframes",
+      "Prototipos",
+      "Componentes",
+      "Diseño Responsive"
+    ]
+  },
+  {
+    "id": 3,
+    "nombre": "Excel para Análisis de Datos",
+    "categoria": "Data",
+    "nivel": "Básico",
+    "profesor": "Fernando Silva",
+    "duracion": "5 semanas",
+    "precio": 95,
+    "disponible": false,
+    "imagen": "assets/excel-data.jpg",
+    "descripcion": "Aprende funciones, tablas dinámicas y gráficos para análisis de información.",
+    "temario": [
+      "Fórmulas",
+      "Tablas dinámicas",
+      "Gráficos",
+      "Dashboards"
+    ]
+  },
+  {
+    "id": 4,
+    "nombre": "Marketing Digital Fundamentals",
+    "categoria": "Marketing",
+    "nivel": "Básico",
+    "profesor": "Andrea Torres",
+    "duracion": "4 semanas",
+    "precio": 140,
+    "disponible": true,
+    "imagen": "assets/marketing.jpg",
+    "descripcion": "Curso introductorio sobre campañas digitales y redes sociales.",
+    "temario": [
+      "SEO",
+      "Redes Sociales",
+      "Publicidad Digital",
+      "Métricas"
+    ]
+  },
+  {
+    "id": 5,
+    "nombre": "Word y PowerPoint Empresarial",
+    "categoria": "Ofimática",
+    "nivel": "Básico",
+    "profesor": "Jorge Ramírez",
+    "duracion": "3 semanas",
+    "precio": 80,
+    "disponible": true,
+    "imagen": "assets/ofimatica.jpg",
+    "descripcion": "Curso práctico para elaboración de documentos y presentaciones profesionales.",
+    "temario": [
+      "Formato de documentos",
+      "Tablas",
+      "Presentaciones",
+      "Animaciones"
+    ]
+  }
+]
