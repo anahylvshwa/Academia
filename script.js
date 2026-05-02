@@ -4,11 +4,12 @@ let selectedCategory = "Todos";
 const coursesContainer = document.getElementById("coursesContainer");
 const searchInput = document.getElementById("searchInput");
 const courseDetail = document.getElementById("courseDetail");
+const modalContent = document.getElementById("modalContent"); // 👈 nuevo
 const buttons = document.querySelectorAll(".buttons button");
 const contactForm = document.getElementById("contactForm");
 const formMessage = document.getElementById("formMessage");
 
-// 👇 Ocultar detalle al inicio (por si el CSS no carga aún)
+// Oculto al inicio
 courseDetail.style.display = "none";
 
 fetch("courses.json")
@@ -82,32 +83,38 @@ buttons.forEach(button => {
 
 searchInput.addEventListener("input", filterCourses);
 
-// 🔥 AQUÍ ESTÁ LA CLAVE
+// 🔥 MODAL
 function showDetail(id) {
   const course = courses.find(item => item.id === id);
 
-  // Mostrar el detalle
-  courseDetail.style.display = "block";
+  courseDetail.style.display = "flex";
 
-  courseDetail.innerHTML = `
+  modalContent.innerHTML = `
+    <span class="close" onclick="closeDetail()">&times;</span>
+
     <h2>${course.nombre}</h2>
-    <p><strong>Descripción:</strong> ${course.descripcion}</p>
-    <p><strong>Profesor:</strong> ${course.profesor}</p>
-    <p><strong>Duración:</strong> ${course.duracion}</p>
-    <p><strong>Nivel:</strong> ${course.nivel}</p>
-    <p><strong>Precio:</strong> S/ ${course.precio}</p>
+
     <p>
-      <strong>Estado:</strong> 
       <span class="${course.disponible ? "available" : "unavailable"}">
         ${course.disponible ? "Disponible" : "No disponible"}
       </span>
     </p>
+
+    <p>${course.descripcion}</p>
+    <p><strong>Profesor:</strong> ${course.profesor}</p>
+    <p><strong>Duración:</strong> ${course.duracion}</p>
+    <p><strong>Nivel:</strong> ${course.nivel}</p>
+    <p><strong>Precio:</strong> S/ ${course.precio}</p>
 
     <h3>Temario:</h3>
     <ul>
       ${course.temario.map(topic => `<li>${topic}</li>`).join("")}
     </ul>
   `;
+}
+
+function closeDetail() {
+  courseDetail.style.display = "none";
 }
 
 contactForm.addEventListener("submit", function(event) {
