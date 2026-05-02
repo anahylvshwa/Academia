@@ -8,6 +8,9 @@ const buttons = document.querySelectorAll(".buttons button");
 const contactForm = document.getElementById("contactForm");
 const formMessage = document.getElementById("formMessage");
 
+// 👇 Ocultar detalle al inicio (por si el CSS no carga aún)
+courseDetail.style.display = "none";
+
 fetch("courses.json")
   .then(response => response.json())
   .then(data => {
@@ -79,8 +82,12 @@ buttons.forEach(button => {
 
 searchInput.addEventListener("input", filterCourses);
 
+// 🔥 AQUÍ ESTÁ LA CLAVE
 function showDetail(id) {
   const course = courses.find(item => item.id === id);
+
+  // Mostrar el detalle
+  courseDetail.style.display = "block";
 
   courseDetail.innerHTML = `
     <h2>${course.nombre}</h2>
