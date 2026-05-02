@@ -52,7 +52,7 @@ main {
 .buttons button {
   padding: 10px 15px;
   border: none;
-  background: #a67c52;
+  background: #B8A5B7;
   color: white;
   border-radius: 8px;
   cursor: pointer;
@@ -160,7 +160,7 @@ form textarea {
 form button {
   padding: 12px;
   border: none;
-  background: #a67c52;
+  background: #B8A5B7;
   color: white;
   border-radius: 10px;
   cursor: pointer;
