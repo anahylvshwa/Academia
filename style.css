@@ -233,3 +233,26 @@ footer {
   font-weight: bold;
   cursor: pointer;
 }
+
+.modal-content h2 {
+  margin-bottom: 15px;
+}
+
+.modal-content p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.modal-content ul {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.modal-content li {
+  margin-bottom: 6px;
+}
+
+.modal-content h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
