@@ -4,12 +4,12 @@ let selectedCategory = "Todos";
 const coursesContainer = document.getElementById("coursesContainer");
 const searchInput = document.getElementById("searchInput");
 const courseDetail = document.getElementById("courseDetail");
-const modalContent = document.getElementById("modalContent"); // 👈 nuevo
+const modalContent = document.getElementById("modalContent");
 const buttons = document.querySelectorAll(".buttons button");
 const contactForm = document.getElementById("contactForm");
 const formMessage = document.getElementById("formMessage");
 
-// Oculto al inicio
+
 courseDetail.style.display = "none";
 
 fetch("courses.json")
@@ -83,7 +83,6 @@ buttons.forEach(button => {
 
 searchInput.addEventListener("input", filterCourses);
 
-// 🔥 MODAL
 function showDetail(id) {
   const course = courses.find(item => item.id === id);
 
