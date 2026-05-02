@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo Web de Cursos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Catálogo Web de Cursos</h1>
+    <p>Encuentra el curso ideal para ti</p>
+  </header>
+
+  <main>
+    <section class="filters">
+      <input type="text" id="searchInput" placeholder="Buscar curso...">
+
+      <div class="buttons">
+        <button data-category="Todos">Todos</button>
+        <button data-category="Programación">Programación</button>
+        <button data-category="Diseño">Diseño</button>
+        <button data-category="Data">Data</button>
+        <button data-category="Ofimática">Ofimática</button>
+        <button data-category="Marketing">Marketing</button>
+      </div>
+    </section>
+
+    <section id="coursesContainer" class="courses"></section>
+
+    <section id="courseDetail" class="detail">
+      <h2>Detalle del curso</h2>
+      <p>Selecciona un curso para ver más información.</p>
+    </section>
+
+    <section class="form-section">
+      <h2>Formulario de consulta</h2>
+
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Nombre">
+        <input type="email" id="email" placeholder="Correo">
+        <input type="text" id="courseInterest" placeholder="Curso de interés">
+        <textarea id="message" placeholder="Mensaje"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <p id="formMessage"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Academia Local</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
